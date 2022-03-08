@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="showingImg" class="show_img">
+    <div class="again_center">
+      <div class="show_img_center">
+        <div class="show_img_close">
+          <img id="imgClose" src="./images/icon-close.svg" alt="">
+        </div>
+        <img id="shownImg" src="" alt="">
+      </div>
+    </div>
+  </div>
+  <nav>
+    <div class="flex_start">
+      <div id="navButton" class="nav_button"><img src="./images/icon-menu.svg" alt=""></div>
+      <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+      <ul id="navList" class="nav_list">
+        <div id="navClose" class="nav_close_button">
+          <img src="./images/icon-close.svg" alt="">
+        </div>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="flex_end">
+      <div id="cardIcon" class="card"><img src="./images/icon-cart.svg" alt="card"></div>
+      <div class="account_holder"><img src="./images/image-avatar.png" alt=""></div>
+    </div>
+  </nav>
+
+  <main>
+    <div id="modelCard" class="model_card">
+      <div class="model_card_heading">Cart</div>
+      <div class="cart_item">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="">
+        <span class="cart_item_name">Fall Limited Edition Sneakers</span>
+        <span id="totalPrice" class="total_price"></span>
+        <img src="./images/icon-delete.svg" alt="">
+      </div>
+      <div class="checkout">
+        <button>Checkout</button>
+      </div>
+    </div>
+
+
+    <div class="left_content">
+      <div class="show_case">
+        <img src="./images/image-product-1.jpg" alt="img1">
+      </div>
+      <div class="show_case_thumbnail">
+        <img id="thumnailImg" class="active_img" src="./images/image-product-1-thumbnail.jpg" alt="">
+        <img id="thumnailImg" src="./images/image-product-2-thumbnail.jpg" alt="">
+        <img id="thumnailImg" src="./images/image-product-3-thumbnail.jpg" alt="">
+        <img id="thumnailImg" src="./images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+    </div>
+    <div class="right_content">
+
+      <p class="company_name"> Sneaker Company</p>
+      <h1 class="brand_name">Fall Limited Edition Sneakers</h1>
+      <p class="company_description"> These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="price">
+        <div class="price_one">
+          <div class="new_price">$125.00</div>
+          <div class="off">50%</div>
+        </div>
+        <div class="old_price">$250.00 </div>
+      </div>
+      <div class="order">
+        <div class="add_remove">
+          <button id="remove">-</button>
+          <button id="ans">0</button>
+          <button id="add">+</button>
+        </div>
+        <div id="addCart" class="add_to_cart">
+          <button>
+            <span>
+              <img src="./images/icon-cart-white.svg" alt="">
+            </span>
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
